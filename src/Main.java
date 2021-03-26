@@ -7,9 +7,8 @@ public class Main {
         double height = scanner.nextDouble();
         System.out.println("Введите вес в кг.");
         int weight = scanner.nextInt();
-        int power = 2;
         BmiService service = new BmiService();
-        double result = service.calculate(weight, height, power);
+        double result = service.calculate(height, weight);
         System.out.println("Индекс массы тела = " + result);
     }
 }

@@ -1,7 +1,10 @@
 public class BmiService {
-    public double calculate(int weight, double height, int power) {
+
+    public double calculate(double height, int weight) {
+        int power=2;
         double result = Math.pow(height, power);
         return weight / result;
+
 
     }
 
